@@ -1,8 +1,8 @@
-#balance = 0; // private field
+#balance = 0; // private field for balance
 
 
- // Method to perform operations
- operation(transaction, amount) {
+// Method to perform operations
+operation(transaction, amount) {
     if (amount > 0) {
 
         if (transaction === "deposit") {
@@ -20,4 +20,10 @@
         } else {
         console.log("Amount must be greater than zero.");
         }
+}
+
+// Method to display the current balance
+showBalance() {
+    console.log(`Current balance: ${this.#balance}`);
+}
 }
